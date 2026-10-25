@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Check</title>
+</head>
+<body>
+    <h2>Check XMLHttpRequest Object</h2>
+
+    <button onclick="checkAJAX()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAJAX() {
+            if (window.XMLHttpRequest) {
+                document.getElementById("result").innerHTML =
+                    "XMLHttpRequest is supported.";
+            } else {
+                document.getElementById("result").innerHTML =
+                    "XMLHttpRequest is not supported.";
+            }
+        }
+    </script>
+</body>
+</html>

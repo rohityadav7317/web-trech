@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <rollno>101</rollno>
+        <name>Rahul Sharma</name>
+        <subject>
+            <name>Web Technology</name>
+            <marks>85</marks>
+        </subject>
+        <subject>
+            <name>Java</name>
+            <marks>90</marks>
+        </subject>
+        <subject>
+            <name>DBMS</name>
+            <marks>80</marks>
+        </subject>
+        <totalmarks>255</totalmarks>
+        <percentage>85</percentage>
+        <result>Pass</result>
+    </student>
+
+    <student>
+        <rollno>102</rollno>
+        <name>Amit Kumar</name>
+        <subject>
+            <name>Web Technology</name>
+            <marks>70</marks>
+        </subject>
+        <subject>
+            <name>Java</name>
+            <marks>75</marks>
+        </subject>
+        <subject>
+            <name>DBMS</name>
+            <marks>65</marks>
+        </subject>
+        <totalmarks>210</totalmarks>
+        <percentage>70</percentage>
+        <result>Pass</result>
+    </student>
+</students>

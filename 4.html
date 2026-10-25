@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGI Program</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-bottom: 70px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>CGI Program</h2>
+
+        <form id="nameForm">
+            Enter Name:
+            <input type="text" id="name" value="Aayesha" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="box">
+        <h1 id="welcome">Welcome, Aayesha</h1>
+        <p>CGI Program Executed Successfully.</p>
+    </div>
+
+    <script>
+        document.getElementById("nameForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+
+            if (name !== "") {
+                document.getElementById("welcome").textContent = "Welcome, " + name;
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<books>
+    <book>
+        <name>Web Technology</name>
+        <quantity>10</quantity>
+        <price>300</price>
+    </book>
+    <book>
+        <name>Java Programming</name>
+        <quantity>5</quantity>
+        <price>400</price>
+    </book>
+    <book>
+        <name>Data Structures</name>
+        <quantity>8</quantity>
+        <price>250</price>
+    </book>
+</books>

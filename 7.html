@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (name.trim() == "") {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if (!email.includes("@") || !email.includes(".")) {
+                alert("Please enter a valid email");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must contain at least 6 characters");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+        Name:
+        <input type="text" id="name"><br><br>
+
+        Email:
+        <input type="text" id="email"><br><br>
+
+        Password:
+        <input type="password" id="password"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

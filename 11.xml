@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+
+<bookstore>
+    <book>
+        <title>Web Technology</title>
+        <price>350</price>
+    </book>
+    <book>
+        <title>Java Programming</title>
+        <price>450</price>
+    </book>
+    <book>
+        <title>Data Structures</title>
+        <price>300</price>
+    </book>
+</bookstore>
